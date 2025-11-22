@@ -1,8 +1,8 @@
 #ifndef CAMERA_H
 #define CAMERA_H
 
-#include <cglm/cglm.h>
-#include <glad/glad.h>
+#include "cglm/cglm.h"
+#include "glad/glad.h"
 
 enum Camera_Movement {
     FORWARD,
