@@ -73,6 +73,11 @@ int main(void) {
 
     unsigned int indexCount;
     unsigned int modelVAO = create_vao_vbo_fast(mesh, &indexCount);
+    if (modelVAO == -1){
+        printf("unable to generate model VAO\n");
+        return -1;
+    }
+
     vec3 lightPos = {2, 4, 0};
     mat4 projection = GLM_MAT4_IDENTITY;
     mat4 view = GLM_MAT4_IDENTITY;
